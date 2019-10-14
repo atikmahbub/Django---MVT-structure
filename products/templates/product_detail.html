@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Product Details</h2>
+ {% if object.image %}
+    <img src = {{ object.image.url }}
+ {% endif %}   
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+<p>{{ object.price }}</p>
+{% endblock %}
